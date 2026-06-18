@@ -1,11 +1,16 @@
 # ai-chat
-an ai chat and ai image creater
-## not advanced
-only uses completly free models
-### providers
------------------------------------------------
-it uses:
-transformers,
-open code,
-pollinations,
-and A1111.
+
+an ai chat and ai image creator
+
+## Local setup
+
+Uses only completely free models.
+Add your own API for paid models.
+
+### Providers
+
+It uses:
+- transformers
+- open code
+- pollinations
+- A1111
