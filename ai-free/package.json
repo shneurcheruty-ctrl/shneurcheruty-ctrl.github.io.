@@ -1,0 +1,36 @@
+{
+  "name": "ai-free",
+  "version": "0.2.20",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "ai-free": "./bin/deepseek.mjs",
+    "deepseek": "./bin/deepseek.mjs",
+    "deepseek-cookie-cli": "./bin/deepseek.mjs"
+  },
+  "scripts": {
+    "postinstall": "playwright install chromium",
+    "start": "node ./bin/deepseek.mjs --window",
+    "window": "node ./bin/deepseek.mjs --window",
+    "server": "node ./bin/deepseek.mjs --no-window",
+    "cli": "node ./bin/deepseek.mjs",
+    "chat": "node ./bin/deepseek.mjs",
+    "api": "node ./bin/deepseek.mjs --api",
+    "login": "node ./bin/deepseek.mjs --login",
+    "login-qwen": "node ./bin/deepseek.mjs --login-qwen",
+    "import-qwen": "node ./bin/deepseek.mjs --import-qwen",
+    "login-chatgpt": "node ./bin/deepseek.mjs --login-chatgpt",
+    "import-chatgpt": "node ./bin/deepseek.mjs --import-chatgpt",
+    "welcome": "node ./bin/deepseek.mjs --welcome",
+    "save-creds": "node ./bin/deepseek.mjs --save-creds",
+    "check": "node ./bin/deepseek.mjs --check",
+    "test": "node --test \"test/**/*.test.mjs\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "patchright": "^1.60.2",
+    "playwright": "^1.60.0"
+  }
+}
